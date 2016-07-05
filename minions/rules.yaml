@@ -1,0 +1,13 @@
+Janitor-Jerry:
+  # What tags should be present on all resources.
+  tags:
+    - owners
+    - servicename
+  # What resources to attack with janitor-jerry ? Comment out the ones that you dont want to attack with.
+  resources:
+    - ec2
+    - elb
+    - asg
+  dry_run: True
+  banana_mode: True
+  
