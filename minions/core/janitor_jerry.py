@@ -4,7 +4,7 @@ from aws import cloudwatch
 from datetime import datetime, timedelta
 region = "us-east-1"
 
-with open("../rules.yaml", 'r') as ymlfile:
+with open("minions/rules.yaml", 'r') as ymlfile:
     cfg = yaml.load(ymlfile)
 for section in cfg:
     print(section)
